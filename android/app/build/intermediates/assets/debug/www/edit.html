@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Evernt Record</title>
+    <link rel="stylesheet" type="text/css" href="css/ionic.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/geturi.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        var id = decodeURI(parseInt(getUrlVars()["id"]));
+            var  name = decodeURI(getUrlVars()["event_name"]);
+            var  location = decodeURI(getUrlVars()["event_location"]);
+            var  date = decodeURI(getUrlVars()["event_date"]);
+            var  time= decodeURI(getUrlVars()["event_time"]);
+            var  organizer = decodeURI(getUrlVars()["event_organizer"]);
+            var report = decodeURI(getUrlVars()["event_report"]);
+
+
+            $("#id).text(id);
+            $("#event_name").val(name);
+            $("#event_location").val(location);
+            $("#event_date").val(date);
+            $("#event_time").val(time);
+            $("#event_report").val(report);
+
+        });
+    </script>
+</head>
+<body>
+    <div class="bar bar-header bar-dark">
+        <a class="button button-clear" href="index.html">Home</a>
+        <h1 class="title">Update Event Record</h1>
+    </div>
+    <div style="padding:10px;margin-top:60px;">
+    <div class="list">
+        ID: <span id="id"></span>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Event Name</span>
+        <input type="text" id="name" placeholder="update event name" value="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Event Location</span>
+        <input type="text" id="location" placeholder="Update Location">
+      </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Date</span>
+            <input type="text" id="date" placeholder="Update event Date">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Time</span>
+            <input type="text" id="time" placeholder="Update event Time">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Organizer</span>
+            <input type="text" id="organizer" placeholder="Update event Time">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Report</span>
+            <input type="text" id="report" placeholder="Update event Report">
+        </label>
+      <button id="update" class="button button-block">UPDATE</button>
+    </div>    
+    </div>
+</body>
+</html>

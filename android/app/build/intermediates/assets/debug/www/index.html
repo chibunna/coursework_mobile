@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color:#D0ECE7;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <title>SQLite Example</title>
+    <link rel="stylesheet" type="text/css" href="css/ionic.css">
+</head>
+<body>
+<div class="bar bar-header bar-dark">
+    <h1 class="title">madDiscovery</h1>
+</div>
+<div style="padding:10px;margin-top:60px;">
+    <button id="createTable" class="button button-block">Initiate Event Instance</button>
+    <div class="list">
+        <label class="item item-input item-stacked-label">
+            <span class="input-label" aria-required="true">Name</span>
+            <input type="text" id="name" placeholder="Event name">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Location</span>
+            <input type="text" id="location" placeholder="Event location">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label" aria-required="true">Date</span>
+            <input type="text" id="date" placeholder="Event date dd/mm/yy">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Time</span>
+            <input type="text" id="time" placeholder="Event time ">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label" aria-required="true">Organizer</span>
+            <input type="text" id="organizer" placeholder="Event organizer">
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label" height="100px">Report</span>
+            <input type="text" id="report" placeholder="Event report">
+        </label>
+
+        <button id="insert" class="button button-block">Add Event</button>
+    </div>
+    <p id="status"></p>
+
+    <button id="showTable" class="button button-block">Display all events</button>
+    No of Rows: <p id="rowCount"></p>
+    <table class="table">
+        <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Action</th>
+        </thead>
+        <tbody id="TableData">
+
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</div>
+</body>
+</html>

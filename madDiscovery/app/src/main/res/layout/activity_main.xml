@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="practice.application.sqlitesaveuserdata.com.application.sqlitesaveuserdata.MainActivity">
+
+
+    <TextClock
+        android:id="@+id/textClock1"
+        android:layout_width="97dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etNewLocation"
+        android:layout_alignStart="@+id/etNewLocation"
+        android:layout_marginBottom="-89dp"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/etNewLocation"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etNewOrg"
+        android:layout_marginTop="89dp" />
+
+    <EditText
+        android:id="@+id/etNewOrg"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignStart="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/btnbackground"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/third"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="103dp"
+        android:background="@drawable/last"
+        android:text="Update"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etID"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignStart="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/newbg"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/etNewDate"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etNewName"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etNewTime"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignStart="@+id/etNewName"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etNewInfo"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignStart="@+id/btnUpdate"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textClock1"
+        android:layout_marginTop="57dp"
+        android:text="Event Name"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNewLocation"
+        android:layout_alignStart="@+id/textClock1"
+        android:text="Location"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNewDate"
+        android:layout_alignStart="@+id/textClock1"
+        android:text="Date"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textClock1"
+        android:layout_marginBottom="205dp"
+        android:text="Time"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textClock1"
+        android:layout_marginBottom="147dp"
+        android:text="Upd/Del"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textClock1"
+        android:layout_marginBottom="88dp"
+        android:text="Event Info"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textClock1"
+        android:layout_marginTop="165dp"
+        android:text="Organizers"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
